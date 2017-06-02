@@ -1,0 +1,6 @@
+framework module Pods_tableView_searchPageTests {
+  umbrella header "Pods-tableView_searchPageTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
