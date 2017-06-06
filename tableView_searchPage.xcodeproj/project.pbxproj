@@ -239,7 +239,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Luthfi Fathur Rahman";
 				TargetAttributes = {
 					CF60D7631ECF3684000E2BBE = {
@@ -591,6 +591,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5CC737C72F29EE114415C08A /* Pods-tableView_searchPage.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2L6QV2N95T;
 				INFOPLIST_FILE = tableView_searchPage/Info.plist;
@@ -605,6 +606,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4E43DA0D07AC33915351D1AB /* Pods-tableView_searchPage.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2L6QV2N95T;
 				INFOPLIST_FILE = tableView_searchPage/Info.plist;
