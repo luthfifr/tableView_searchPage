@@ -33,7 +33,7 @@ class TableViewController: UITableViewController, UISearchBarDelegate, UISearchR
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        emptyView.isHidden = true
         self.resultSearchController = ({
             let controller = UISearchController(searchResultsController: nil)
             controller.searchResultsUpdater = self
@@ -214,6 +214,7 @@ class TableViewController: UITableViewController, UISearchBarDelegate, UISearchR
     }
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        
         let SBText = removeSpecialCharsFromString(text: searchBar.text!)
         self.get_data_from_url(url: "http://www.luthfifr.com/tutorialdata/ios/productlist/cariproduk.php?cari=\(SBText)")
     }
@@ -223,6 +224,7 @@ class TableViewController: UITableViewController, UISearchBarDelegate, UISearchR
         if((searchBar.text) != nil){
             searchBar.text = ""
         }
+        setEmptyViewVisible(visible: true)
         
         DispatchQueue.main.async(execute: {
             self.tableView.reloadData()
